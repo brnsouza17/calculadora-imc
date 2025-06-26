@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato, sans-serif;
+    color: white;
+}
+
+body {
+    background-color: #090e22;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 1rem;
+}
+
+.box {
+    background-color: #1d1e33;
+    max-width: 400px;
+    width: 400px;
+    padding: 2rem;
+}
+
+.input-screen {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #ccc;
+}
+
+h1 { font-size: 1.5rem; }
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+h1, h2 { text-align: center; }
+
+input {
+    width: 100%;
+    padding: 1rem .5rem;
+    color: #000;
+}
+
+.buttons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    width: 160px;
+    padding: 1rem;
+    opacity: .9;
+    background-color: #f44236;
+    border: none;
+    cursor: pointer;
+}
+
+#clear { background-color: #444; }
+
+button:hover { opacity: 1; }
+
+/* result screen */
+
+.result-screen {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+}
+
+.hidden { display: none; }
+
+#status {
+    color: #ccc;
+    font-size: 1.3rem;
+}
+
+.table p {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #dfdfdf;
+}
+
+table {
+    width: 100%;
+    font-size: .8rem;
+    margin-top: 1rem;
+    border-bottom: 1px solid #444;
+    border-collapse: collapse;
+}
+
+th {
+    color: #ccc;
+    padding: 4px;
+}
+
+td {
+    border-bottom: 1px solid #444;
+    padding: 8px;
+}
+
+.result-screen button {
+    margin: 1rem auto;
+    width: 100px;
+}
+
+/* bmi status js */
+
+.thinnless,
+.overweight { color: #dbce12; }
+
+.normal { color: #12db34; }
+
+.obesity { color: #db6212; }
+
+.severe-obesity { color: #db1912; }
