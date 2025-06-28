@@ -15,7 +15,8 @@ const inputScreen = document.querySelector(".input-screen");
 const resultScreen = document.querySelector(".result-screen");
 const h2 = document.querySelector("h2");
 
-calc.addEventListener("click", () => {
+const calcImc = () => {
+
     if (!height.value || !weight.value) return;
 
     height.addEventListener("input", (e) => {
@@ -54,13 +55,23 @@ calc.addEventListener("click", () => {
 
     h2.innerHTML = `Seu IMC: <span class="${userStatus}">${imc}</span>`;
 
+}
+
+calc.addEventListener("click", calcImc);
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") calcImc();
 });
 
 const back = document.querySelector("#back");
 
-back.addEventListener("click", () => {
+const backToInputs = () => {
     resultScreen.classList.add("hidden");
     inputScreen.classList.remove("hidden");
     height.value = "";
     weight.value = "";
+}
+
+back.addEventListener("click", backToInputs);
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") backToInputs();
 });
