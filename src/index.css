@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #090e22;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    background-color: #1d1e33;
+    max-width: 400px;
+    width: 400px;
+    padding: 2rem;
+}
+
+.input-screen {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+button {
+    width: 160px;
+    padding: 1rem;
+    opacity: .9;
+    background-color: #f44236;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+.buttons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.clear {
+    background-color: #444;
+}
+
+.back {
+    margin: 0 auto;
+    width: 100px;
+}
+
+h1 { font-size: 1.5rem; }
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+h1, h2 { text-align: center; }
+
+label p {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #ccc;
+}
+
+input {
+    width: 100%;
+    padding: 1rem .5rem;
+    color: #000;
+}
+
+.result-screen {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 19px;
+    color: #dfdfdf;
+    font-weight: bold;
+}
+
+.current-status {
+    font-size: 16px;
+    color: #fff;
+    font-weight: normal;
+}
+
+table {
+    font-size: 13px;
+    width: 100%;
+    border-bottom: 1px solid #444;
+    border-collapse: collapse;
+}
+
+.table-header {
+    color: #ccc;
+}
+
+th {
+    color: #ccc;
+    padding: 4px;
+}
+
+td {
+    border-bottom: 1px solid #444;
+    padding: 8px;
+}
+
+.Magreza,
+.Sobrepeso { color: #dbce12; }
+
+.Normal { color: #12db34; }
+
+.Obesidade { color: #db6212; }
+
+.Obesidade-grave { color: #db1912; }
