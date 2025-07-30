@@ -11,7 +11,6 @@ const App = () => {
 
     const calcImc = () => {
         if (!weight || !height) return;
-        alert(height);
         const imcResult = (weight / (height * height)).toFixed(1);
         setImc(imcResult);
 
