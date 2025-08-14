@@ -4,13 +4,16 @@ import Form from "./components/Form";
 import Result from "./components/Result";
 
 const App = () => {
-    const [height, setHeight] = useState("");
-    const [weight, setWeight] = useState("");
+    let [height, setHeight] = useState("");
+    let [weight, setWeight] = useState("");
     const [imc, setImc] = useState();
     const [currentStatus, setCurrentStatus] = useState("");
 
     const calcImc = () => {
         if (!weight || !height) return;
+        height = height.replace(",", ".");
+        weight = weight.replace(",", ".");
+        if (!height.includes(".")) height = height / 100;
         const imcResult = (weight / (height * height)).toFixed(1);
         setImc(imcResult);
 
